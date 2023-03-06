@@ -48,11 +48,6 @@ body {
 		padding-left: 25px;
 	}
 
-	// .menu__item
-
-	&__item {
-	}
-
 	// .menu__link
 
 	&__link {
@@ -64,12 +59,6 @@ body {
 
 	&__right {
 		padding-right: 86px;
-	}
-}
-.logo {
-	// .logo__img
-
-	&__img {
 	}
 }
 
@@ -216,14 +205,188 @@ body {
 		flex-direction: column;
 		row-gap: 20px;
 	}
-
-	// .info__item
-
-	&__item {
-	}
 }
+
 .title {
 	font-weight: 300;
 	font-size: 32px;
 	text-transform: uppercase;
+}
+
+.track {
+	background-image: url("../img/track/01.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	// .track__title
+
+	&__title {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	// .track__text
+
+	&__text {
+		max-width: 435px;
+	}
+
+	// .track__img
+
+	&__img {
+		margin: auto auto 90px auto;
+	}
+}
+
+.evo {
+	margin-bottom: 100px;
+}
+.evo-black {
+	background-color: #363636;
+	padding: 100px 0 50px;
+	color: #fff;
+	// .evo-black__inner
+
+	&__inner {
+		position: relative;
+		&::before {
+			content: "";
+			background-image: url("../img/evo/dec-01.png");
+			position: absolute;
+			width: 185px;
+			height: 213px;
+			top: 211px;
+			left: -139px;
+		}
+		&::after {
+			content: "";
+			background-image: url("../img/evo/dec-02.png");
+			position: absolute;
+			width: 498px;
+			height: 572px;
+			top: 295px;
+			left: -41px;
+		}
+	}
+
+	// .evo-black__info
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .evo-black__title
+
+	&__title {
+		padding-right: 50px;
+	}
+
+	// .evo-black__infobox
+
+	&__infobox {
+		flex-basis: 437px;
+	}
+
+	// .evo-black__text
+
+	&__text {
+		margin-bottom: 30px;
+	}
+
+	&__text:last-child {
+		margin-bottom: 0px;
+	}
+
+	// .evo-black__img
+
+	&__img {
+		position: relative;
+		z-index: 1;
+		display: block;
+		margin: 200px auto 60px;
+	}
+
+	// .evo-black__descr-list
+
+	&__descr-list {
+		display: flex;
+		justify-content: center;
+		gap: 0 65px;
+	}
+
+	&__descr-list dd {
+		text-transform: uppercase;
+	}
+}
+.evo-white {
+	// .evo-white__inner
+
+	&__inner {
+		padding-top: 125px;
+		position: relative;
+		&::before {
+			content: "";
+			background-image: url("../img/evo/dec-03.png");
+			position: absolute;
+			width: 274px;
+			height: 257px;
+			top: -23px;
+			left: 363px;
+		}
+		&::after {
+			content: "";
+			background-image: url("../img/evo/dec-04.png");
+			position: absolute;
+			width: 324px;
+			height: 311px;
+			top: 119px;
+			left: 602px;
+		}
+	}
+
+	// .evo-white__text
+
+	&__text {
+		margin-bottom: 30px;
+	}
+	&__text:first-child {
+		max-width: 285px;
+	}
+	&__text:nth-child(2) {
+		max-width: 437px;
+	}
+	&__text:nth-child(3) {
+		max-width: 590px;
+		margin-bottom: 0px;
+	}
+
+	// .evo-white__video
+
+	&__video {
+		margin-top: 100px;
+		background-image: url(../img/evo/video.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 264px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	// .evo-white__video-link
+
+	&__video-link span {
+		display: block;
+		color: #fff;
+	}
 }
