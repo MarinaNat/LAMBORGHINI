@@ -47,6 +47,32 @@
               <a href="#" class="menu__link">Контакты</a>
             </li>
           </ul>
+          <button class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="menu__mobile">
+            <li class="menu__item">
+              <a href="#" class="menu__link">О гонке</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Трек</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Lamborghini Super trofeo</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Новости</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Купить билеты</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Смотреть онлайн</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -133,36 +159,34 @@
                 самых престижных трасс Европы.
               </p>
             </div>
-            <div class="info__table">
-              <div class="info__row">
-                <div class="info__column">
-                  <div class="info__item">Этап 1:</div>
-                  <div class="info__item">Этап 2:</div>
-                  <div class="info__item">Этап 3:</div>
-                  <div class="info__item">Этап 4:</div>
-                  <div class="info__item">Этап 5:</div>
-                  <div class="info__item">Этап 6:</div>
-                  <div class="info__item">Гранд-финал 2022 :</div>
-                </div>
-                <div class="info__column">
-                  <div class="info__item">Имола (Италия)</div>
-                  <div class="info__item">Ле-Кастелле (Франция)</div>
-                  <div class="info__item">Мизано (Италия)</div>
-                  <div class="info__item">Спа-Франкоршам (Бельгия)</div>
-                  <div class="info__item">Барселона (Испания)</div>
-                  <div class="info__item">Портимао (Португалия)</div>
-                  <div class="info__item">Портимао (Португалия)</div>
-                </div>
-                <div class="info__column">
-                  <div class="info__item">1-3 апреля</div>
-                  <div class="info__item">3–5 июня</div>
-                  <div class="info__item">1–3 июля</div>
-                  <div class="info__item">29–30 июля</div>
-                  <div class="info__item">30 сентября–2 октября</div>
-                  <div class="info__item">3-4 ноября</div>
-                  <div class="info__item">5-6 ноября</div>
-                </div>
-              </div>
+            <div class="info__grid">
+              <div class="info__item">Этап 1:</div>
+              <div class="info__item">Имола (Италия)</div>
+              <div class="info__item">1-3 апреля</div>
+
+              <div class="info__item">Этап 2:</div>
+              <div class="info__item">Ле-Кастелле (Франция)</div>
+              <div class="info__item">3–5 июня</div>
+
+              <div class="info__item">Этап 3:</div>
+              <div class="info__item">Мизано (Италия)</div>
+              <div class="info__item">1–3 июля</div>
+
+              <div class="info__item">Этап 4:</div>
+              <div class="info__item">Спа-Франкоршам (Бельгия)</div>
+              <div class="info__item">29–30 июля</div>
+
+              <div class="info__item">Этап 5:</div>
+              <div class="info__item">Барселона (Испания)</div>
+              <div class="info__item">30 сентября–2 октября</div>
+
+              <div class="info__item">Этап 6:</div>
+              <div class="info__item">Портимао (Португалия)</div>
+              <div class="info__item">3-4 ноября</div>
+
+              <div class="info__item">Гранд-финал 2022 :</div>
+              <div class="info__item">Портимао (Португалия)</div>
+              <div class="info__item">5-6 ноября</div>
             </div>
           </div>
         </div>
@@ -278,9 +302,7 @@
         <div class="container">
           <h3 class="blog__title title">БЛОГ</h3>
           <div class="blog__slider swiper">
-            <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide">
                 <div class="blog__item">
                   <img
@@ -362,7 +384,6 @@
                 </div>
               </div>
             </div>
-            <!-- If we need navigation buttons -->
             <div class="blog__button blog__button-left">
               <img src="./img/blog/icons/arrow-left.svg" alt="стрелка влево" />
             </div>
@@ -485,7 +506,18 @@
               Sitio do Escampadinho, Mexilhoeira Grande, 8500-148 Portimao,
               Portugal
             </address>
-            <div id="map"></div>
+            <!-- для подключения стилизованной google карты -->
+            <!-- <div id="map"></div> -->
+            <!-- если подключается стилизованная google карта iframe 
+            ниже нужно убрать-->
+            <iframe
+              class="footer__iframe"
+              src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d12707.117788838654!2d-8.641780559216306!3d37.229210319596696!3m2!1i1024!2i768!4f13.1!2m1!1sSitio%20do%20Escampadinho%2C%20Mexilhoeira%20Grande%2C%208500-148%20Portimao%2C%20Portugal!5e0!3m2!1sru!2sru!4v1678173251128!5m2!1sru!2sru"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
         <div class="footer__bottom">
